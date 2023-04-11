@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Vector3 targetPosition;
+    [SerializeField] float smoothSpeed = 100f;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
             targetPosition.x--;
 
-            if(targetPosition.x <= -444f)
+            if(targetPosition.x >= -444f)
             {
                 targetPosition.x = -444f;
             }
@@ -74,13 +75,14 @@ public class PlayerMovement : MonoBehaviour
         {
             targetPosition.y++;
 
-            if (targetPosition.y <= 507f)
+            if (targetPosition.y >= 507f)
             {
                 targetPosition.y = 507f;
             }
         }
-        
-        transform.position = targetPosition; 
+
+        Vector3 smoothPosition = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
+        transform.position = smoothPosition; 
 
     }
 }

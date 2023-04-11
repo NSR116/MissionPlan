@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3741799209603024316}
+  - component: {fileID: 1621670201188347083}
   - component: {fileID: 8077585101030280458}
   m_Layer: 0
   m_Name: Soldier
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1621670201188347083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3741799209603024317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.32714, y: 13.8069, z: 4.573964}
+  m_Center: {x: 0.24933195, y: 6.40345, z: 0.676446}
 --- !u!114 &8077585101030280458
 MonoBehaviour:
   m_ObjectHideFlags: 0
