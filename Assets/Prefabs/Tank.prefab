@@ -869,8 +869,8 @@ GameObject:
   - component: {fileID: 2406922077056463383}
   - component: {fileID: 7550701563721337957}
   - component: {fileID: 1252859072300493603}
-  - component: {fileID: 2289089918001736060}
   - component: {fileID: -1323380054651171357}
+  - component: {fileID: 2289089918001736060}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -946,6 +946,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &-1323380054651171357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3039026280466917549}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7083006, y: 3.679259, z: 11.469727}
+  m_Center: {x: 0, y: 0.10001119, z: -0.49873608}
 --- !u!114 &2289089918001736060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,19 +974,7 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 8
---- !u!65 &-1323380054651171357
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3039026280466917549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.7083006, y: 3.4792361, z: 10.420708}
-  m_Center: {x: 0, y: -0.00000031789145, z: -0.49609965}
+  panel: {fileID: 7461684076711052669, guid: 0f882dd82afc3402093bde72600c46db, type: 3}
 --- !u!1 &3175649791290193896
 GameObject:
   m_ObjectHideFlags: 0

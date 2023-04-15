@@ -237,8 +237,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15.437462, y: 13.423235, z: 28.773272}
-  m_Center: {x: -0.5799999, y: 4.62, z: -5.203191}
+  m_Size: {x: 15.437462, y: 13.423235, z: 31.452694}
+  m_Center: {x: 0.9, y: 5.22, z: -5}
 --- !u!114 &-4008197637530362051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +254,7 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 8
+  panel: {fileID: 7461684076711052669, guid: 0f882dd82afc3402093bde72600c46db, type: 3}
 --- !u!1 &2309470903373317943
 GameObject:
   m_ObjectHideFlags: 0
