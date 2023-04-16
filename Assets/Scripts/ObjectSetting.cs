@@ -7,7 +7,7 @@ using UnityEngine;
 public class ObjectSetting : MonoBehaviour
 {
     [SerializeField] LayerMask layer;
-    [SerializeField] GameObject panel;
+    [SerializeField] GameObject optionsButton;
     private bool isPlaced = false;
     private bool isRotated = false;
     private Vector2 turn;
@@ -69,7 +69,7 @@ public class ObjectSetting : MonoBehaviour
                     hitInfo.transform.gameObject.name == "Transportation(Clone)")
                 {
                     print(hitInfo.transform.gameObject.name);
-                    panel.SetActive(true);
+                    optionsButton.SetActive(true);
                 }
             }
         }
@@ -79,7 +79,7 @@ public class ObjectSetting : MonoBehaviour
     {
         if(isPlaced && isRotated)
         {
-            panel.SetActive(false);
+            optionsButton.SetActive(false);
         }
     }
 
