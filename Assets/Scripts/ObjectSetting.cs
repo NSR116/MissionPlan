@@ -59,7 +59,6 @@ public class ObjectSetting : MonoBehaviour
     {
         if(isPlaced && isRotated)
         {
-            print("!!!");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray.origin, ray.direction, out RaycastHit hitInfo, Mathf.Infinity))
             {
@@ -68,7 +67,6 @@ public class ObjectSetting : MonoBehaviour
                     hitInfo.transform.gameObject.name == "Tank(Clone)" ||
                     hitInfo.transform.gameObject.name == "Transportation(Clone)")
                 {
-                    print(hitInfo.transform.gameObject.name);
                     optionsButton.SetActive(true);
                 }
             }
@@ -85,6 +83,23 @@ public class ObjectSetting : MonoBehaviour
 
     public void delete()
     {
+        if(gameObject.name == "Soldier(Clone)")
+        {
+            SystemInformation.soldierNum -= 1;
+        }
+        else if(gameObject.name == "Medical(Clone)")
+        {
+            SystemInformation.medicalNum -= 1;
+        }
+        else if(gameObject.name == "Tank(Clone)")
+        {
+            SystemInformation.tankNum -= 1;
+        }
+        else
+        {
+            SystemInformation.carNum -= 1;
+        }
+
         Destroy(gameObject);
     }
 

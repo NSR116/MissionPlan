@@ -11,5 +11,22 @@ public class ObjectInstantiation : MonoBehaviour
     {
         panel.SetActive(false);
         Instantiate(arrayObject[index], new Vector3(0, 0, 0), Quaternion.identity);
+
+        if(index == 0)
+        {
+            SystemInformation.soldierNum += 1;
+        }
+        else if(index == 1)
+        {
+            SystemInformation.medicalNum += 1;
+        }
+        else if(index == 2)
+        {
+            SystemInformation.tankNum += 1;
+        }
+        else
+        {
+            SystemInformation.carNum += 1;
+        }
     }
 }
