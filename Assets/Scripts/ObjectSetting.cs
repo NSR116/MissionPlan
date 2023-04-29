@@ -67,6 +67,8 @@ public class ObjectSetting : MonoBehaviour
                     hitInfo.transform.gameObject.name == "Tank(Clone)" ||
                     hitInfo.transform.gameObject.name == "Transportation(Clone)")
                 {
+                     // -19,70
+                    //optionsButton.transform.position = Input.mousePosition;
                     optionsButton.SetActive(true);
                 }
             }
